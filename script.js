@@ -56,6 +56,13 @@
 
 //calcular el perimwetro de un cuadrado
 
-let mide= Number(prompt("cuanto mide tu cuadrado"));
-let perimetro= Number(mide + mide);
-alert("el perimetro de tu cuadrado es de " + perimetro);
+// let mide= Number(prompt("cuanto mide tu cuadrado"));
+// let perimetro= Number(mide + mide);
+// alert("el perimetro de tu cuadrado es de " + perimetro);
+
+
+//convertidor de minutos a segundos
+
+let minutos=Number(prompt("cuantos minutos tienes"));
+let segundos=(minutos*60);
+alert("tienes " + segundos + "segundos");
