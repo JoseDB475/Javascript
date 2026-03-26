@@ -36,7 +36,12 @@
 
 //convertidor de pesos a dolares
 
-let pesos= Number(prompt("coloca la cantidad en pesos"));
-let dolares=(pesos * 0.00027);
-alert("tienes" + dolares + " dolares");
+// let pesos= Number(prompt("coloca la cantidad en pesos"));
+// let dolares=(pesos * 0.00027);
+// alert("tienes" + dolares + " dolares");
 
+//convertidor de grados celcius a farenheit
+
+let gradoscelcius = Number(prompt("coloca grados los celcius"));
+let gradosfarenheit= Number(gradoscelcius * 1.8) + 32;
+alert("tienes " + gradosfarenheit + " grados farenheit");
