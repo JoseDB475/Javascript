@@ -63,6 +63,15 @@
 
 //convertidor de minutos a segundos
 
-let minutos=Number(prompt("cuantos minutos tienes"));
-let segundos=(minutos*60);
-alert("tienes " + segundos + "segundos");
+// let minutos=Number(prompt("cuantos minutos tienes"));
+// let segundos=(minutos*60);
+// alert("tienes " + segundos + "segundos");
+
+//area del triangulo
+
+let base= Number(prompt("cual es la base de tu triangulo"));
+let altura= Number(prompt("cual es la altura de tu triangulo"));
+let areatriangulo=(base * altura)/2;
+alert("el area de tu triangulo es " + areatriangulo);
+
+
