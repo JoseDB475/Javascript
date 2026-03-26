@@ -48,7 +48,14 @@
 
 //calcular el areab de un cuadrado
 
-let medida= Number(prompt("cual es la medida de  tu cuadrado"));
+// let medida= Number(prompt("cual es la medida de  tu cuadrado"));
 
-let area=Number ( medida * medida);
-alert("el area del cuadrado es de " + area);
+// let area=Number ( medida * medida);
+// alert("el area del cuadrado es de " + area);
+
+
+//calcular el perimwetro de un cuadrado
+
+let mide= Number(prompt("cuanto mide tu cuadrado"));
+let perimetro= Number(mide + mide);
+alert("el perimetro de tu cuadrado es de " + perimetro);
