@@ -22,8 +22,15 @@
 
 
 
-let kilometros= Number(prompt("pon un numero en kilometros"));
-let metros= (kilometros * 1000);
+// let kilometros= Number(prompt("pon un numero en kilometros"));
+// let metros= (kilometros * 1000);
 
-alert("el resultado es  " + metros + " metros");
+// alert("el resultado es  " + metros + " metros");
+
+let edad=Number(prompt("cual es tu edad"))
+
+let convertidor=(edad * 7 );
+alert("tu edad perruna es " + convertidor)
+
+
 
