@@ -27,10 +27,16 @@
 
 // alert("el resultado es  " + metros + " metros");
 
-let edad=Number(prompt("cual es tu edad"))
 
-let convertidor=(edad * 7 );
-alert("tu edad perruna es " + convertidor)
+//convertidor edad canina
+// let edad=Number(prompt("cual es tu edad"))
 
+// let convertidor=(edad * 7 );
+// alert("tu edad perruna es " + convertidor)
 
+//convertidor de pesos a dolares
+
+let pesos= Number(prompt("coloca la cantidad en pesos"));
+let dolares=(pesos * 0.00027);
+alert("tienes" + dolares + " dolares");
 
