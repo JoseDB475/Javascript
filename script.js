@@ -42,6 +42,13 @@
 
 //convertidor de grados celcius a farenheit
 
-let gradoscelcius = Number(prompt("coloca grados los celcius"));
-let gradosfarenheit= Number(gradoscelcius * 1.8) + 32;
-alert("tienes " + gradosfarenheit + " grados farenheit");
+// let gradoscelcius = Number(prompt("coloca grados los celcius"));
+// let gradosfarenheit= Number(gradoscelcius * 1.8) + 32;
+// alert("tienes " + gradosfarenheit + " grados farenheit");
+
+//calcular el areab de un cuadrado
+
+let medida= Number(prompt("cual es la medida de  tu cuadrado"));
+
+let area=Number ( medida * medida);
+alert("el area del cuadrado es de " + area);
