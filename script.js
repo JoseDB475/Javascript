@@ -132,50 +132,58 @@
 
 // }
 
-let palabras = ["sol", "luna", "estrella", "cielo", "mar", "montaña", "río", "bosque", "viento", "fuego"];
+// let palabras = ["sol", "luna", "estrella", "cielo", "mar", "montaña", "río", "bosque", "viento", "fuego"];
 
-let maslarga = palabras[0];
-let mascorta = palabras[0];
+// let maslarga = palabras[0];
+// let mascorta = palabras[0];
+// let invertido = [];
 
 
-for (let i=0; 1<palabras.length; i++){
-    console.log(palabras[i] + " " + palabras[i].length + "letras");
+// for (let i=0; i<palabras.length; i++){
+//     console.log(palabras[i] + " " + palabras[i].length + "letras");
 
     
 
     
-    if(palabras[i].length>maslarga.length){
-    maslarga = palabras[i];
-}
-    if(palabras[i].length<mascorta.length){
-    mascorta = palabras[i];
-
-}
-}
-
-// {
-
-
- console.log("la palabra mas larga es ", maslarga);
- console.log("la palabra mas corta es ",mascorta);
-
-// }
-// }
-
-// }
-
-
-
 //     if(palabras[i].length>maslarga.length){
 //     maslarga = palabras[i];
 // }
-//     if(palabras[i].length-1<mascorta.length){
+//     if(palabras[i].length<mascorta.length){
 //     mascorta = palabras[i];
 
-// console.log("la palabra mas larga es ", maslarga);
-// console.log("la palabra mas corta es ",mascorta);
-
+// }
 // }
 
+//  console.log("la palabra mas larga es ", maslarga);
+//  console.log("la palabra mas corta es ",mascorta);
 
+// for (let i = palabras.length - 1; i>=0; i--){
+//     invertido.push(palabras[i]);
+// }
+
+// console.log(invertido);
+
+
+const estudiantes = [
+  { nombre: "Julián", apellido: "Pérez", notaFinal: 4.5 },
+  { nombre: "Valeria", apellido: "Gómez", notaFinal: 3.2 },
+  { nombre: "Mateo", apellido: "Torres", notaFinal: 5.0 },
+  { nombre: "Lucía", apellido: "Ramírez", notaFinal: 2.8 },
+  { nombre: "Andrés", apellido: "Castro", notaFinal: 4.1 }
+];
+
+
+
+for (let i = 0; i<estudiantes.length; i++){
+
+    if(estudiantes[i].notaFinal<3.5){
+     console.log("el estudiante " + estudiantes[i].nombre + " " + "reprobo ");
+    }
+
+    if( estudiantes[i].notaFinal>4.0){
+    console.log("el estudiante " + estudiantes[i].nombre + " " +  "aprobo ");
+    }
+
+  
+}
 
