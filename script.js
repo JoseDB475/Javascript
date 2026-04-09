@@ -176,10 +176,12 @@ const estudiantes = [
 
 for (let i = 0; i<estudiantes.length; i++){
 
-    if(estudiantes[i].notaFinal<3.5){
-     console.log("el estudiante " + estudiantes[i].nombre + " " + "reprobo ");
+    if(estudiantes[i].notaFinal<3.0){
+     console.log("el estudiante " + estudiantes[i].nombre + " " + "perdio ");
     }
-
+   else if(estudiantes[i].notaFinal>=3.0 && estudiantes[i].notaFinal<4.0){
+    console.log("el estudiante " + estudiantes[i].nombre + " " + "debe nivelar ");
+   }
     if( estudiantes[i].notaFinal>4.0){
     console.log("el estudiante " + estudiantes[i].nombre + " " +  "aprobo ");
     }
