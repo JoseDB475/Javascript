@@ -112,22 +112,70 @@
 
 // console.log(total)
 
-let operacion= prompt(`que operacion quieres realizar?
-1=suma
-2=resta
-3=multiplicacion
-4=division`)
+// let operacion= prompt(`que operacion quieres realizar?
+// 1=suma
+// 2=resta
+// 3=multiplicacion
+// 4=division`)
 
-let n1=Number(prompt("digite el numero 1"));
-let n2=Number(prompt("digite el numero 2"));
+// let n1=Number(prompt("digite el numero 1"));
+// let n2=Number(prompt("digite el numero 2"));
 
-if (operacion==1){
-    console.log("la suma es"  + n1+n2);
-} else if(operacion==2){
-    console.log("la resta es " + n1-n2)
-}else if(operacion==3){
-    console.log("el resultado de la multiplicacion es " + n1*n2)
-}else{
-    console.log("el resultado de la division es " + n1/n2)
+// if (operacion==1){
+//     console.log("la suma es"  + n1+n2);
+// } else if(operacion==2){
+//     console.log("la resta es " + n1-n2)
+// }else if(operacion==3){
+//     console.log("el resultado de la multiplicacion es " + n1*n2)
+// }else{
+//     console.log("el resultado de la division es " + n1/n2)
+
+// }
+
+let palabras = ["sol", "luna", "estrella", "cielo", "mar", "montaña", "río", "bosque", "viento", "fuego"];
+
+let maslarga = palabras[0];
+let mascorta = palabras[0];
+
+
+for (let i=0; 1<palabras.length; i++){
+    console.log(palabras[i] + " " + palabras[i].length + "letras");
+
+    
+
+    
+    if(palabras[i].length>maslarga.length){
+    maslarga = palabras[i];
+}
+    if(palabras[i].length<mascorta.length){
+    mascorta = palabras[i];
 
 }
+}
+
+// {
+
+
+ console.log("la palabra mas larga es ", maslarga);
+ console.log("la palabra mas corta es ",mascorta);
+
+// }
+// }
+
+// }
+
+
+
+//     if(palabras[i].length>maslarga.length){
+//     maslarga = palabras[i];
+// }
+//     if(palabras[i].length-1<mascorta.length){
+//     mascorta = palabras[i];
+
+// console.log("la palabra mas larga es ", maslarga);
+// console.log("la palabra mas corta es ",mascorta);
+
+// }
+
+
+
