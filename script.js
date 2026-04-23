@@ -164,28 +164,270 @@
 // console.log(invertido);
 
 
-const estudiantes = [
-  { nombre: "Julián", apellido: "Pérez", notaFinal: 4.5 },
-  { nombre: "Valeria", apellido: "Gómez", notaFinal: 3.2 },
-  { nombre: "Mateo", apellido: "Torres", notaFinal: 5.0 },
-  { nombre: "Lucía", apellido: "Ramírez", notaFinal: 2.8 },
-  { nombre: "Andrés", apellido: "Castro", notaFinal: 4.1 }
+// const estudiantes = [
+//   { nombre: "Julián", apellido: "Pérez", notaFinal: 4.5 },
+//   { nombre: "Valeria", apellido: "Gómez", notaFinal: 3.2 },
+//   { nombre: "Mateo", apellido: "Torres", notaFinal: 5.0 },
+//   { nombre: "Lucía", apellido: "Ramírez", notaFinal: 2.8 },
+//   { nombre: "Andrés", apellido: "Castro", notaFinal: 4.1 }
+// ];
+
+
+
+// for (let i = 0; i<estudiantes.length; i++){
+
+//     if(estudiantes[i].notaFinal<3.0){
+//      console.log("el estudiante " + estudiantes[i].nombre + " " + "perdio ");
+//     }
+//    else if(estudiantes[i].notaFinal>=3.0 && estudiantes[i].notaFinal<4.0){
+//     console.log("el estudiante " + estudiantes[i].nombre + " " + "debe nivelar ");
+//    }
+//     if( estudiantes[i].notaFinal>=4.0){
+//     console.log("el estudiante " + estudiantes[i].nombre + " " +  "aprobo ");
+//     }
+
+  
+// }
+
+// switch (numero=1){
+//   case 1:
+//      console.log("lunes");
+//      break
+
+//   case 2:
+//     console.log("martes");
+//     break
+
+//   case 3:
+//     console.log("miercoles");
+//     break
+
+//   case 3:
+//     console.log("jueves");
+//     break
+
+//   default:
+//     break
+  
+// }
+
+
+// let opcion= prompt(
+//   `seleccione una opcion
+//   1. sumar
+//   2.restar
+//   3.multiplicar
+//   4. salir`
+// );
+
+
+// while(i<4){
+// opcion= prompt(
+//   `seleccione una opcion
+//   1. sumar
+//   2.restar
+//   3.multiplicar
+//   4. salir`
+// );
+// alert(`tu opcion ha sido ` + opcion)
+// }
+
+// let azar = Math.floor((Math.random() * 10) + 1);
+
+// let estado = true;
+// let intentos = 1;
+
+// while(estado){
+
+//   let n=Number(prompt(`un numero?`));
+  
+
+//   if(n===azar){
+//     alert(`ganaste en el intento: ${intentos}`)
+//     estado = false
+//   }
+//   else if (intentos>=5){
+
+//     alert(`perdiste, no te quedan mas intentos`);
+//     estado = false
+//   } else {
+//     alert(`ese no era`);
+//   }
+
+//   intentos++
+
+// }
+
+// let mes =Number(prompt("digita un mes"));
+
+// let estacion= ""
+
+// switch (mes){
+//   case 1:case 2:case 12:
+//       alert("estas en invierno");
+//       break
+
+//  case 3:case 4:case 5:
+//   alert("estas en primavera");
+//       break
+
+//  case 6:case 7:case  8:
+//   alert("estas en verano ");
+//       break
+
+//  case 9:case 10:case 11:
+//   alert("estas en otoño")
+//   default:
+//     alert("este no es un mes");
+// }
+  
+
+// let data = [2024, 2026, 3000, 2100]
+
+// for( data = 0; i<=data.length; i++){
+
+//   if((year % 4 == 0 && year % 100 !==0) || year % 400===0){
+//   console.log(`el año es bisiesto`)
+//  } else{
+//   console.log(`no es`);
+//  }
+// }
+
+
+// DOM= (Document  object model)
+
+//  let bnt1 = document.getElementById(`bnt1`);
+
+
+//  bnt1.addEventListener(`click`, ()=>{
+//   alert(`boton 1`)
+//   })
+
+
+// let bnt2 = document.getelementBYID(`bnt2`);
+
+// bnt2.addEventListener(`click`, ()=>{
+  
+// } )
+
+const motosRapidas = [
+  {
+    modelo: "Dodge Tomahawk",
+    cilindraje: "8277 cc (V10)",
+    velocidadMaxima: "536 km/h (teórica)",
+    imagen: "https://images.unsplash.com/photo-1558981806-ec527fa84c39"
+  },
+  {
+    modelo: "Kawasaki Ninja H2R",
+    cilindraje: "998 cc (sobrealimentada)",
+    velocidadMaxima: "400+ km/h",
+    imagen: "https://images.unsplash.com/photo-1609630875171-b1321377ee65"
+  },
+  {
+    modelo: "MTT Turbine Superbike Y2K",
+    cilindraje: "Motor Turbina Rolls-Royce",
+    velocidadMaxima: "365 km/h",
+    imagen: "https://images.unsplash.com/photo-1580310614729-ccd69652491d"
+  },
+  {
+    modelo: "Suzuki GSX-1300R Hayabusa",
+    cilindraje: "1340 cc",
+    velocidadMaxima: "312 km/h",
+    imagen: "https://images.unsplash.com/photo-1518655048521-f130df041f66"
+  },
+  {
+    modelo: "Kawasaki Ninja ZX-14R",
+    cilindraje: "1441 cc",
+    velocidadMaxima: "300+ km/h (limitada)",
+    imagen: "https://images.unsplash.com/photo-1558981359-219d6364c9c8"
+  },
+  {
+    modelo: "BMW S1000RR",
+    cilindraje: "999 cc",
+    velocidadMaxima: "303 km/h",
+    imagen: "https://images.unsplash.com/photo-1599819055807-9a7e7f1c4c3a"
+  },
+  {
+    modelo: "Ducati Panigale V4 R",
+    cilindraje: "998 cc",
+    velocidadMaxima: "300+ km/h",
+    imagen: "https://images.unsplash.com/photo-1605559424843-9e4c2288c76b"
+  },
+  {
+    modelo: "Aprilia RSV4 1100 Factory",
+    cilindraje: "1078 cc",
+    velocidadMaxima: "300+ km/h",
+    imagen: "https://images.unsplash.com/photo-1588627541420-fce3f661b779"
+  },
+  {
+    modelo: "Honda CBR1000RR-R Fireblade",
+    cilindraje: "1000 cc",
+    velocidadMaxima: "300+ km/h",
+    imagen: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6"
+  },
+  {
+    modelo: "Yamaha YZF-R1",
+    cilindraje: "998 cc",
+    velocidadMaxima: "299 km/h (limitada)",
+    imagen: "https://images.unsplash.com/photo-1558980394-4c7c9299fe96"
+  },
+  {
+    modelo: "MV Agusta F4 R 312",
+    cilindraje: "1078 cc",
+    velocidadMaxima: "312 km/h",
+    imagen: "https://images.unsplash.com/photo-1571607388263-1044f9ea01dd"
+  },
+  {
+    modelo: "Suzuki GSX-R1000",
+    cilindraje: "999 cc",
+    velocidadMaxima: "299 km/h (limitada)",
+    imagen: "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+  },
+  {
+    modelo: "Kawasaki Ninja ZX-10R",
+    cilindraje: "998 cc",
+    velocidadMaxima: "299 km/h (limitada)",
+    imagen: "https://images.unsplash.com/photo-1542281286-9e0a16bb7366"
+  },
+  {
+    modelo: "Ducati 1299 Panigale S",
+    cilindraje: "1285 cc",
+    velocidadMaxima: "300+ km/h",
+    imagen: "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+  }
 ];
 
 
+ 
+ 
+let title = document.querySelector(`h1`)
+let container = document.querySelector(`section`)
 
-for (let i = 0; i<estudiantes.length; i++){
+ title.textcontect = 'motosRapidas'
 
-    if(estudiantes[i].notaFinal<3.0){
-     console.log("el estudiante " + estudiantes[i].nombre + " " + "perdio ");
-    }
-   else if(estudiantes[i].notaFinal>=3.0 && estudiantes[i].notaFinal<4.0){
-    console.log("el estudiante " + estudiantes[i].nombre + " " + "debe nivelar ");
-   }
-    if( estudiantes[i].notaFinal>4.0){
-    console.log("el estudiante " + estudiantes[i].nombre + " " +  "aprobo ");
-    }
 
+
+
+
+for(let i= 0; i<motosRapidas.length; i++) {
+  let modelo = motosRapidas[i].modelo;
+  let imagen = motosRapidas[i].imagen;
   
+  
+  
+
+
+  container.innerHTML+= `
+  <div class="card">
+           <div class="img">
+          
+          <img src="${imagen}" alt=""> </div>
+          <p>${modelo}</p>
+       
+
+      </div>
+  `
+
 }
+
 
