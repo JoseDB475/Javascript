@@ -52,11 +52,12 @@ calcularImc();
 
 
 
-Function init () {
+function init () {
     personas.forEach(function(persona){
     
         const imc = calcularImc(persona.peso, persona.altura);
-        console.log(Math.round(imc));
+        
+        const message =diagnosticar(Number(imc.toFixed))
 
     })
 
